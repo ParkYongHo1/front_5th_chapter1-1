@@ -45,13 +45,13 @@ var S=Object.defineProperty;var b=t=>{throw TypeError(t)};var L=(t,e,o)=>e in t?
   
     <nav class="bg-white shadow-md p-2 sticky top-14">
       <ul class="flex justify-around">
-        ${(t?[e.home,e.profile,e.logout]:[e.home,e.login]).map(s=>s.id==="logout"?`
+        ${(t?[e.home,e.profile,e.logout]:[e.home,e.login]).map(s=>(console.log(location.pathname),console.log(s.path),s.id==="logout"?`
           <li>
             <a href="${y}/login" id="logout" class="text-gray-600">로그아웃</a>
           </li>`:`
         <li>
           <a href="${y}${s.path}" class="${location.pathname===s.path?"text-blue-600 font-bold":"text-gray-600"}">${s.content}</a>
-        </li>`).join("")}
+        </li>`)).join("")}
       </ul>
     </nav>
   `},N=({name:t,createdAt:e,content:o})=>`
