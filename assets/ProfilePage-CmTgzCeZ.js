@@ -1,4 +1,4 @@
-var v=Object.defineProperty;var b=t=>{throw TypeError(t)};var y=(t,e,s)=>e in t?v(t,e,{enumerable:!0,configurable:!0,writable:!0,value:s}):t[e]=s;var f=(t,e,s)=>y(t,typeof e!="symbol"?e+"":e,s),g=(t,e,s)=>e.has(t)||b("Cannot "+s);var r=(t,e,s)=>(g(t,e,"read from private field"),s?s.call(t):e.get(t)),u=(t,e,s)=>e.has(t)?b("Cannot add the same private member more than once"):e instanceof WeakSet?e.add(t):e.set(t,s),d=(t,e,s,a)=>(g(t,e,"write to private field"),a?a.call(t,s):e.set(t,s),s);(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const o of document.querySelectorAll('link[rel="modulepreload"]'))a(o);new MutationObserver(o=>{for(const l of o)if(l.type==="childList")for(const c of l.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&a(c)}).observe(document,{childList:!0,subtree:!0});function s(o){const l={};return o.integrity&&(l.integrity=o.integrity),o.referrerPolicy&&(l.referrerPolicy=o.referrerPolicy),o.crossOrigin==="use-credentials"?l.credentials="include":o.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function a(o){if(o.ep)return;o.ep=!0;const l=s(o);fetch(o.href,l)}})();const A=()=>`
+var v=Object.defineProperty;var b=t=>{throw TypeError(t)};var y=(t,e,s)=>e in t?v(t,e,{enumerable:!0,configurable:!0,writable:!0,value:s}):t[e]=s;var f=(t,e,s)=>y(t,typeof e!="symbol"?e+"":e,s),h=(t,e,s)=>e.has(t)||b("Cannot "+s);var r=(t,e,s)=>(h(t,e,"read from private field"),s?s.call(t):e.get(t)),m=(t,e,s)=>e.has(t)?b("Cannot add the same private member more than once"):e instanceof WeakSet?e.add(t):e.set(t,s),d=(t,e,s,a)=>(h(t,e,"write to private field"),a?a.call(t,s):e.set(t,s),s);(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const o of document.querySelectorAll('link[rel="modulepreload"]'))a(o);new MutationObserver(o=>{for(const l of o)if(l.type==="childList")for(const u of l.addedNodes)u.tagName==="LINK"&&u.rel==="modulepreload"&&a(u)}).observe(document,{childList:!0,subtree:!0});function s(o){const l={};return o.integrity&&(l.integrity=o.integrity),o.referrerPolicy&&(l.referrerPolicy=o.referrerPolicy),o.crossOrigin==="use-credentials"?l.credentials="include":o.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function a(o){if(o.ep)return;o.ep=!0;const l=s(o);fetch(o.href,l)}})();const A=()=>`
   <main class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="bg-white p-8 rounded-lg shadow-md w-full text-center" style="max-width: 480px">
       <h1 class="text-2xl font-bold text-blue-600 mb-4">항해플러스</h1>
@@ -34,23 +34,23 @@ var v=Object.defineProperty;var b=t=>{throw TypeError(t)};var y=(t,e,s)=>e in t?
       </div>
     </div>
   </main>
-`,h=`
+`,g=`
     <footer class="bg-gray-200 p-4 text-center">
       <p>&copy; 2024 항해플러스. All rights reserved.</p>
     </footer>
-`,w=[{id:1,name:"홍길동",createdAt:"5분 전",content:"오늘 날씨가 정말 좋네요. 다들 좋은 하루 보내세요"},{id:2,name:"박용호",createdAt:"15분 전",content:"오늘 날씨가 정말 좋네요. 다들 좋은 하루 보내세요"},{id:3,name:"김용호",createdAt:"25분 전",content:"오늘 날씨가 정말 좋네요. 다들 좋은 하루 보내세요"},{id:4,name:"이용호",createdAt:"1시간 전",content:"오늘 날씨가 정말 좋네요. 다들 좋은 하루 보내세요"},{id:5,name:"이용호",createdAt:"1시간 전",content:"오늘 날씨가 정말 좋네요. 다들 좋은 하루 보내세요"}],$={home:{id:"",content:"홈",path:"/"},profile:{id:"profile",content:"프로필",path:"/profile"},login:{id:"login",content:"로그인",path:"/login"},logout:{id:"logout",content:"로그아웃",path:"/logout"}};var n,i;class I{constructor(){u(this,n,null);u(this,i,"user");f(this,"state",{loggedIn:!1,posts:w});d(this,n,JSON.parse(localStorage.getItem(r(this,i))||"null")),this.state.loggedIn=r(this,n)!==null}setUserInfo(e){d(this,n,e),localStorage.setItem(r(this,i),JSON.stringify(e)),this.state.loggedIn=!0}removeUserInfo(){d(this,n,null),localStorage.removeItem(r(this,i)),this.state.loggedIn=!1}get userInfo(){return r(this,n)}getState(){return this.state}}n=new WeakMap,i=new WeakMap;const p=new I,S=!!window.location.pathname.includes("index.hash.html"),m=S?"":"/front_5th_chapter1-1",x=()=>{const t=p.getState().loggedIn,e=$;return`
+`,w=[{id:1,name:"홍길동",createdAt:"5분 전",content:"오늘 날씨가 정말 좋네요. 다들 좋은 하루 보내세요"},{id:2,name:"박용호",createdAt:"15분 전",content:"오늘 날씨가 정말 좋네요. 다들 좋은 하루 보내세요"},{id:3,name:"김용호",createdAt:"25분 전",content:"오늘 날씨가 정말 좋네요. 다들 좋은 하루 보내세요"},{id:4,name:"이용호",createdAt:"1시간 전",content:"오늘 날씨가 정말 좋네요. 다들 좋은 하루 보내세요"},{id:5,name:"이용호",createdAt:"1시간 전",content:"오늘 날씨가 정말 좋네요. 다들 좋은 하루 보내세요"}],$={home:{id:"",content:"홈",path:"/"},profile:{id:"profile",content:"프로필",path:"/profile"},login:{id:"login",content:"로그인",path:"/login"},logout:{id:"logout",content:"로그아웃",path:"/logout"}};var n,i;class I{constructor(){m(this,n,null);m(this,i,"user");f(this,"state",{loggedIn:!1,posts:w});d(this,n,JSON.parse(localStorage.getItem(r(this,i))||"null")),this.state.loggedIn=r(this,n)!==null}setUserInfo(e){d(this,n,e),localStorage.setItem(r(this,i),JSON.stringify(e)),this.state.loggedIn=!0}removeUserInfo(){d(this,n,null),localStorage.removeItem(r(this,i)),this.state.loggedIn=!1}get userInfo(){return r(this,n)}getState(){return this.state}}n=new WeakMap,i=new WeakMap;const p=new I,S=!!window.location.pathname.includes("index.hash.html"),c=S?"":"/front_5th_chapter1-1",x=()=>{const t=p.getState().loggedIn,e=$,s=t?[e.home,e.profile,e.logout]:[e.home,e.login],a=!!window.location.pathname.includes("index.hash.html");return`
     <header class="bg-blue-600 text-white p-4 sticky top-0">
       <h1 class="text-2xl font-bold">항해플러스</h1>
     </header>
   
     <nav class="bg-white shadow-md p-2 sticky top-14">
       <ul class="flex justify-around">
-        ${(t?[e.home,e.profile,e.logout]:[e.home,e.login]).map(o=>o.id==="logout"?`
+        ${s.map(l=>l.id==="logout"?`
           <li>
-            <a href="${m}/login" id="logout" class="text-gray-600">로그아웃</a>
+            <a href="${c}/login" id="logout" class="text-gray-600">로그아웃</a>
           </li>`:`
         <li>
-          <a href="${m}${o.path}" class="${location.pathname===`${m}${o.path}`?"text-blue-600 font-bold":"text-gray-600"}">${o.content}</a>
+          <a href="${c}${l.path}" class="${a?location.hash===`${c}#${l.path}`?"text-blue-600 font-bold":"text-gray-600":location.pathname===`${c}${l.path}`?"text-blue-600 font-bold":"text-gray-600"}">${l.content}</a>
         </li>`).join("")}
       </ul>
     </nav>
@@ -86,7 +86,7 @@ var v=Object.defineProperty;var b=t=>{throw TypeError(t)};var y=(t,e,s)=>e in t?
               `).join("")}
           </div>
         </main>
-        ${h}
+        ${g}
       </div>
     </div>
   `},L=()=>{const t=p.userInfo||{},{username:e="",bio:s="",email:a=""}=t;return`
@@ -153,8 +153,8 @@ var v=Object.defineProperty;var b=t=>{throw TypeError(t)};var y=(t,e,s)=>e in t?
             </form>
           </div>
         </main>
-       ${h}
+       ${g}
       </div>
     </div>
   </div>
-`};export{m as B,N as L,j as M,A as N,L as P,p as s};
+`};export{c as B,N as L,j as M,A as N,L as P,p as s};
